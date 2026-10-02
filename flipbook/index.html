@@ -24,7 +24,7 @@ const scenes=[['06-tree-fortress-sanctuary','Inside their sanctuary'],['05-tree-
 const book=document.querySelector('#book'),spread=document.querySelector('#spread'),previous=document.querySelector('#previous'),next=document.querySelector('#next');
 const reduced=matchMedia('(prefers-reduced-motion: reduce)');
 let index=0,turn=null,pointer=null,animating=false;
-const revision='20261002-nomie-search-v3';
+const revision='20261002-mansion-home-fresh-v1';
 const path=(i,side)=>`${scenes[i][0]}-part-${side==='left'?1:2}-${side}.png?v=${revision}`;
 const img=(i,side)=>{const e=new Image();e.src=path(i,side);e.alt=`${scenes[i][1]}, ${side} page`;e.draggable=false;return e};
 for(let i=0;i<scenes.length;i++)for(const side of ['left','right'])img(i,side);
