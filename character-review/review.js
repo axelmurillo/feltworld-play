@@ -22,7 +22,7 @@ const zoomButton = byId('zoom-button');
 let currentIndex = 0;
 let enlarged = false;
 
-const imageRevision = '20261002-five-gnomes-v3';
+const imageRevision = '20261002-detail-v4';
 const imageURL = view => `images/${view.id}.png?v=${imageRevision}`;
 const imageAlt = view => `Lumi, Kitty, Doggy, Nomie and Jack together, viewed ${view.description}, in their current default outfits.`;
 
