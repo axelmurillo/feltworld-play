@@ -20,11 +20,11 @@
 <footer><div class="controls"><button id="first" aria-label="First spread" title="First spread" disabled>⇤</button><button id="previous" aria-label="Previous spread" disabled>‹</button><span id="position" aria-live="polite">1 / 8</span><button id="next" aria-label="Next spread">›</button><button id="last" aria-label="Last spread" title="Last spread">⇥</button></div><details><summary>Download this scene</summary><div class="links"><a id="left-download" download>Left page</a><a id="right-download" download>Right page</a><a id="master-download" download>Full spread</a></div></details></footer>
 </main>
 <script>
-const scenes=[['06-tree-fortress-sanctuary','Inside their sanctuary'],['05-tree-fortress-exterior','Lumi and Kitty’s tree-fortress'],['08-jack-search','Jack searches for Doggy'],['07-doggy-alone','Doggy waits in the snow'],['04-trio-lake','The quiet lake'],['01-woodland-bridge','Woodland bridge'],['03-manor-welcome','A welcome at the mansion'],['02-manor-interior','Inside the mansion']];
+const scenes=[['06-tree-fortress-sanctuary','Inside their sanctuary'],['05-tree-fortress-exterior','Lumi and Kitty’s tree-fortress'],['08-jack-search','Jack searches for Doggy'],['09-nomie-search-mansion','Nomie searches outside her mansion'],['07-doggy-alone','Doggy waits in the snow'],['04-trio-lake','The quiet lake'],['01-woodland-bridge','Woodland bridge'],['03-manor-welcome','A welcome at the mansion'],['02-manor-interior','Inside the mansion']];
 const book=document.querySelector('#book'),spread=document.querySelector('#spread'),previous=document.querySelector('#previous'),next=document.querySelector('#next');
 const reduced=matchMedia('(prefers-reduced-motion: reduce)');
 let index=0,turn=null,pointer=null,animating=false;
-const revision='20261002-manor-v5';
+const revision='20261002-nomie-search-v3';
 const path=(i,side)=>`${scenes[i][0]}-part-${side==='left'?1:2}-${side}.png?v=${revision}`;
 const img=(i,side)=>{const e=new Image();e.src=path(i,side);e.alt=`${scenes[i][1]}, ${side} page`;e.draggable=false;return e};
 for(let i=0;i<scenes.length;i++)for(const side of ['left','right'])img(i,side);
