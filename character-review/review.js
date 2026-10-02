@@ -22,7 +22,8 @@ const zoomButton = byId('zoom-button');
 let currentIndex = 0;
 let enlarged = false;
 
-const imageURL = view => `images/${view.id}.png`;
+const imageRevision = '20261002-lumi-nomie-v2';
+const imageURL = view => `images/${view.id}.png?v=${imageRevision}`;
 const imageAlt = view => `Lumi, Kitty, Doggy and Nomie together, viewed ${view.description}, in their current default outfits.`;
 
 for (const [index, view] of views.entries()) {
