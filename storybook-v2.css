@@ -17,7 +17,7 @@ h1 em{font-style:normal;color:var(--accent)!important}
 .book-page{background:linear-gradient(90deg,#e9c8e709,transparent 10%);border-color:var(--line)}.book-page p.story{font-family:Nunito;font-size:18px;line-height:1.75;color:var(--reading)}.book-page h2{font-size:36px;line-height:1.2}.quote{font-family:Storybook;font-style:normal;color:var(--accent);font-size:18px;border-color:var(--line)}
 .choices{gap:11px}.choice{background:var(--page);border:1px solid var(--line);padding:14px;border-radius:15px 8px 15px 8px}.choice strong{font-size:14px;font-weight:750;color:var(--ink)}.choice small{font-size:12px;color:var(--muted)}.choice-number{color:var(--accent);border-color:var(--line);font-family:Nunito;font-weight:700}.choice-arrow{color:var(--gold)}.choice:hover:not(:disabled){background:var(--soft);border-color:var(--accent);transform:translateX(4px)}.choice-heading{font-size:11px}.page-bottom{font-size:11px}.reflection{font:19px/1.8 Nunito;color:var(--reading)}.reflection-icon{color:var(--gold);font-size:38px}.reflection+.memory-note{color:var(--reading)}.memory-note{color:var(--reading);background:var(--soft);border-color:var(--line);font-size:13px}.effects{gap:9px}.effect{background:var(--soft);color:var(--ink);font-size:13px}.effect.negative{background:#80524f44;color:#f0b799}:root[data-theme=light] .effect.negative{color:#954e46;background:#f4dad9}
 .meter{color:var(--muted);font-size:11px}.meter strong{color:var(--ink)}.health-track{background:var(--line)}.health-track i{background:var(--accent)}.progress span{background:var(--line)}.progress span.done{background:var(--accent)}
-.sprite{background-image:url('assets/characters-v2.png');animation:breathe 5s ease-in-out infinite}.sprite.cat{clip-path:inset(0 0 2.7% 0)}.party{z-index:4;bottom:42px;gap:2px}.party .blue{width:150px}.party .cat{width:87px}.party .puppy{width:97px}.party .gnome{width:172px}.party .sprite.active:after{display:none}.cast-strip{border-color:var(--line);margin-top:28px;padding-top:20px}.cast-card .sprite{animation:none}.cast-card small{font-size:12px;color:var(--muted)}.cast-card strong{font-size:23px}
+.sprite{background-image:url('assets/characters-v2.png');animation:breathe 5s ease-in-out infinite}.sprite.cat{clip-path:none}.party{z-index:4;bottom:42px;gap:2px}.party .blue{width:150px}.party .cat{width:87px}.party .puppy{width:97px}.party .gnome{width:172px}.party .sprite.active:after{display:none}.cast-strip{border-color:var(--line);margin-top:28px;padding-top:20px}.cast-card .sprite{animation:none}.cast-card small{font-size:12px;color:var(--muted)}.cast-card strong{font-size:23px}
 .world-button{position:absolute;top:20px;left:18px;background:#17112455;border:1px solid #edc68944;border-radius:20px;padding:4px 4px 7px;color:#fff0e0;z-index:5;width:102px}.world-button:hover{background:#37234eaa}.world-button>span{font:11px Nunito}.world-button .planet-wrap,.art.heart .world-button .planet-wrap{position:static;width:91px;height:91px;z-index:auto}.world-button canvas{pointer-events:none;cursor:default}.planet-hint{display:none}.planet-fallback{border-radius:0;background:transparent url('assets/felt-world.png') center/contain no-repeat;box-shadow:none}
 .pottery-hotspot{position:absolute;z-index:5;background:#1e152a99;border:1px solid #e9c4896b;border-radius:20px;padding:5px 12px;color:#ffefd9;font-size:10px;backdrop-filter:blur(5px)}.pottery-hotspot.manor{right:10%;top:36%}.pottery-hotspot.cottage{right:2%;top:67%}.pottery-hotspot:hover{background:#5d4268dd;border-color:#fbe8b2}.pottery-hotspot span{color:#ffdca2}.scene-label,.spark-note{z-index:5;font-family:Nunito}.glimmer{z-index:6}.glimmer.s0{top:32%;left:27%}.glimmer.s1{top:48%;left:66%}.glimmer.s2{top:61%;left:38%}
 .world-layers{position:absolute;inset:0;z-index:2;pointer-events:none}.scene-objects{width:100%;height:100%;overflow:visible}.scene-result{position:absolute;top:18px;left:130px;right:14px;padding:10px 13px;background:#392c4fe6;border:1px solid #d8b2d9aa;border-radius:12px;color:#fff1ee;font:700 12px/1.5 Nunito;animation:result-pop .45s cubic-bezier(.2,1.4,.4,1)}.scene-result.warning{background:#493044ee;border-color:#d49891}.felt-flower{transform-box:fill-box;transform-origin:50% 100%}.responding .felt-flower .bloom{transform-box:fill-box;transform-origin:center;animation:flower-open .8s both;animation-delay:var(--delay)}.river-current{animation:river-flow 1.7s linear infinite}.fish.free{animation:fish-swim 4s ease-in-out infinite}.fish.trapped{animation:fish-wriggle .8s ease-in-out infinite}.smoke{animation:smoke-rise 5s ease-in-out infinite}.bees{animation:bee-flight 3.2s ease-in-out infinite}.responding .growing-food,.responding .warm-shelter,.responding .sunflower-lamp,.responding .rain-cups,.responding .new-roots{transform-box:fill-box;transform-origin:bottom;animation:flower-open .65s cubic-bezier(.2,1.2,.5,1)}.responding .stump,.responding .fallen-branch{animation:result-pop .5s ease-out}.village-light{animation:lamps-warm 3s ease-in-out infinite}.heavy-rain{position:absolute;inset:0;background:repeating-linear-gradient(108deg,transparent 0 25px,#ede4ff40 26px 27px,transparent 28px 48px);animation:rain .55s linear infinite}.art.storm:before{display:none}.celebration{position:absolute;left:12%;right:12%;top:18%;display:flex;justify-content:space-around;color:#f8db9c;font-size:34px;animation:stars-drift 4s ease-in-out infinite}.celebration span{font-size:20px;color:#f6badb}.choice-response .party .sprite{animation:friend-hop .7s cubic-bezier(.2,.8,.5,1) 2}.hurt+.party .sprite{animation:none}
@@ -131,9 +131,9 @@ h1 em{font-style:normal;color:var(--accent)!important}
 .heavy-rain{opacity:.35}
 
 /* Current character canon: real iris colours and fringe-only magic. */
-.sprite{background-image:url('assets/characters-v5.png')}
+.sprite{background-image:url('assets/characters-v7.png')}
 .sprite.cat{clip-path:none}
-.sprite.gnome{background-image:url('assets/nomie-fringes-v6.png');background-position:left top}
+.sprite.gnome{background-image:url('assets/nomie-fringes-v7.png');background-position:left top}
 body[data-fringe="lavender"] .sprite.gnome{background-position:right top}
 body[data-fringe="rose"] .sprite.gnome{background-position:left bottom}
 body[data-fringe="aqua"] .sprite.gnome{background-position:right bottom}
@@ -157,18 +157,18 @@ body[data-fringe="aqua"] .sprite.gnome{background-position:right bottom}
 
 /* Separate the saving explanation from the introduction on the cover. */
 .cover-copy h1{grid-row:2/6}.cover-copy .save-explainer{grid-column:2;grid-row:3!important;margin:2px 0 12px}.cover-copy .cover-actions{grid-row:4}.cover-copy .small-note{grid-row:5}
-.sprite.cat{clip-path:inset(0 0 3% 0)}
+.sprite.cat{clip-path:none}
 
 .sound-button svg{vertical-align:middle;margin-right:4px}
 @media(max-width:720px){.sound-button span[aria-hidden="true"]{display:inline}.sound-button svg{display:block;margin:0}}
 
-.sprite.gnome{clip-path:inset(8%)}.modal-character.gnome{width:min(340px,85%)}
+.sprite.gnome{clip-path:none}.modal-character.gnome{width:min(340px,85%)}
 
 /* Padding protects the huge hat; align Nomie’s boots with the other friends. */
-.party .gnome{translate:0 14%}
+.party .gnome{translate:0 0}
 
-/* Remove neighbouring atlas fibers above Puppy’s padded silhouette. */
-.sprite.puppy{clip-path:inset(4% 0 0 0)}
+/* All approved sprites include padding around their soft fibre edges. */
+.sprite.puppy{clip-path:none}
 
 /* One brand, with the sentiment given room to read rather than tracked out. */
 .brand-sub{letter-spacing:.02em;font-size:10px;text-transform:none}

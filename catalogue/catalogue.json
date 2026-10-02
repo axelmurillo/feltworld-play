@@ -1,12 +1,12 @@
 {
-  "version": 5,
-  "title": "Axel's Creature Catalogue",
+  "version": 7,
+  "title": "Feltworld creature catalogue",
   "created": "2026-10-01",
   "generator": "built-in image_gen",
   "original_scene": "source-scene.png",
   "reference_sheet_maximum_edge_px": 2048,
   "reference_sheet_native_size_px": "See individual PNG headers and prompt records",
-  "usage": "Use the latest v4/v5 sheets below. October 2 user revisions override older eye colours, hair and hat proportions in the original composites. Use originals for scene scale and unchanged costume details. The natural-fur sheets show each creature without clothes; Nomie remains dressed. Maximum 2048 pixels per edge.",
+  "usage": "Use the approved v7 sheets below. Matte surfaces, loose fine wool fibres, fuzzy edges, subtle handmade irregularity and slightly uneven stitching apply to all four characters. Latest user revisions govern eyes, hair and Nomie\u2019s tall pointed gnome hat. Original composites govern relative scene scale. Natural-fur sheets show the three creatures without clothing; Nomie remains dressed. Maximum 2048 pixels per edge.",
   "prompt_template": "Use catalogue character [CR-001 / CR-002 / CR-003 / CR-004] and the attached matching reference sheet. Preserve the character's exact facial design, proportions, colours and tactile handcrafted material style. Wardrobe: [original outfit / natural fur for a creature / specified new outfit]. Scene: [describe scene]. Pose and expression: [describe]. Maximum 2K resolution.",
   "characters": [
     {
@@ -17,10 +17,11 @@
       "outfit": "Multicoloured floppy crochet hat with gold star and pompom; braided scarf with gold stars; crystal-topped microphone.",
       "without": true,
       "references": {
-        "with_clothes": "lumi-clothed-v4.png",
-        "without_clothes": "lumi-natural-v4.png"
+        "with_clothes": "lumi-clothed-v7.png",
+        "without_clothes": "lumi-natural-v7.png"
       },
-      "name_confirmed_by_user": false
+      "name_confirmed_by_user": false,
+      "material": "Matte needle-felted wool, loose fine fibres, fuzzy edges, slightly uneven stitching and subtle handmade irregularity."
     },
     {
       "id": "CR-002",
@@ -30,35 +31,40 @@
       "outfit": "Multicoloured braided scarf with prominent gold star. No hat.",
       "without": true,
       "references": {
-        "with_clothes": "kitty-clothed-v5.png",
-        "without_clothes": "kitty-natural-v5.png"
+        "with_clothes": "kitty-clothed-v7.png",
+        "without_clothes": "kitty-natural-v7.png"
       },
-      "name_confirmed_by_user": true
+      "name_confirmed_by_user": true,
+      "material": "Matte needle-felted wool, loose fine fibres, fuzzy edges, slightly uneven stitching and subtle handmade irregularity.",
+      "pronouns": "he/him"
     },
     {
       "id": "CR-003",
-      "name": "Puppy",
+      "name": "Doggy",
       "slug": "puppy",
-      "identity": "Tiny ivory/cream puppy with soft fluffy fur, floppy curly ears, unmistakably BLUE irises, black button nose, short muzzle, rosy cheeks, rounded paws and small fluffy tail.",
+      "identity": "Tiny ivory/cream puppy with soft fluffy fur, soft floppy wool ears, unmistakably BLUE irises, black button nose, short muzzle, rosy cheeks, rounded paws and small fluffy tail.",
       "outfit": "Multicoloured braided scarf with prominent gold star. No hat.",
       "without": true,
       "references": {
-        "with_clothes": "puppy-clothed-v5.png",
-        "without_clothes": "puppy-natural-v5.png"
+        "with_clothes": "doggy-clothed-v7.png",
+        "without_clothes": "doggy-natural-v7.png"
       },
-      "name_confirmed_by_user": true
+      "name_confirmed_by_user": true,
+      "material": "Matte needle-felted wool, loose fine fibres, fuzzy edges, slightly uneven stitching and subtle handmade irregularity.",
+      "pronouns": "she/her"
     },
     {
       "id": "CR-004",
       "name": "Nomie",
       "slug": "gnome-girl",
       "identity": "Petite fantasy gnome girl, warm honey-beige skin slightly deeper than the original, subtly mixed facial features, rosy cheeks, crystal-faceted GREY irises with restrained silver/white iridescence; never purple. Cool mushroom/ash-brown hair balayaged to platinum/silver in two braids. Only her front fringe magically changes silver, lavender, rose or aqua.",
-      "outfit": "Comically colossal floppy red knitted floral snowflake hat, much bigger than her body; face prominent and unobscured. Floral sage-grey dress/coat, braided scarf, brown satchel and boots; star-window lantern.",
+      "outfit": "Comically colossal, tall upward-pointed red wool gnome hat with floral appliqu\u00e9s and snowflakes, much bigger than her body; face prominent and unobscured. Floral sage-grey dress/coat, braided scarf, brown satchel and boots; star-window lantern.",
       "without": false,
       "references": {
-        "with_clothes": "nomie-sheet-v5.png"
+        "with_clothes": "nomie-sheet-v7.png"
       },
-      "name_confirmed_by_user": true
+      "name_confirmed_by_user": true,
+      "material": "Matte needle-felted wool, loose fine fibres, fuzzy edges, slightly uneven stitching and subtle handmade irregularity."
     }
   ],
   "original_composites": [
@@ -66,8 +72,8 @@
     "../assets/references/original-four.png",
     "../assets/references/original-pottery-scale.png"
   ],
-  "source_priority": "Latest explicit user revisions and v4/v5 sheets override older references for specified details. Original composites govern relative world scale and unchanged details.",
-  "corrected_character_atlas": "../assets/characters-v5.png",
+  "source_priority": "Approved handmade character proposals and v7 production references govern current character designs. Original concepts remain historical references for spirit, costume and relative world scale.",
+  "corrected_character_atlas": "../assets/characters-v7.png",
   "world_characters": [
     {
       "id": "WR-001",
@@ -89,8 +95,7 @@
     }
   ],
   "world_scene_catalogue": "../assets/scenes-v3/index.html",
-  "world_scene_prompts": "../assets/scene-prompts-v3.json",
   "updated": "2026-10-02",
-  "nomie_fringe_atlas": "../assets/nomie-fringes-v6.png",
-  "current_prompts": "../assets/revision-prompts-v4-v5.json"
+  "nomie_fringe_atlas": "../assets/nomie-fringes-v7.png",
+  "natural_character_atlas": "../assets/characters-natural-v7.png"
 }
