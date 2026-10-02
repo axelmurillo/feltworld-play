@@ -16,11 +16,11 @@
 <body>
 <main>
 <header><h1 id="scene">The quiet lake</h1><div class="header-links"><p class="hint">Tap either page · drag or use ← →</p><a href="https://axelmurillo.github.io/feltworld-play/character-review/">Characters</a></div></header>
-<div class="stage"><div class="book" id="book" tabindex="0" role="group" aria-label="Illustrated book, spread 1 of 4"><div class="spread" id="spread"></div><div class="crease"></div></div></div>
-<footer><div class="controls"><button id="first" aria-label="First spread" title="First spread" disabled>⇤</button><button id="previous" aria-label="Previous spread" disabled>‹</button><span id="position" aria-live="polite">1 / 4</span><button id="next" aria-label="Next spread">›</button><button id="last" aria-label="Last spread" title="Last spread">⇥</button></div><details><summary>Download this scene</summary><div class="links"><a id="left-download" download>Left page</a><a id="right-download" download>Right page</a><a id="master-download" download>Full spread</a></div></details></footer>
+<div class="stage"><div class="book" id="book" tabindex="0" role="group" aria-label="Illustrated book, spread 1 of 6"><div class="spread" id="spread"></div><div class="crease"></div></div></div>
+<footer><div class="controls"><button id="first" aria-label="First spread" title="First spread" disabled>⇤</button><button id="previous" aria-label="Previous spread" disabled>‹</button><span id="position" aria-live="polite">1 / 6</span><button id="next" aria-label="Next spread">›</button><button id="last" aria-label="Last spread" title="Last spread">⇥</button></div><details><summary>Download this scene</summary><div class="links"><a id="left-download" download>Left page</a><a id="right-download" download>Right page</a><a id="master-download" download>Full spread</a></div></details></footer>
 </main>
 <script>
-const scenes=[['04-trio-lake','The quiet lake'],['01-woodland-bridge','Woodland bridge'],['03-manor-welcome','A welcome at the mansion'],['02-manor-interior','Inside the mansion']];
+const scenes=[['04-trio-lake','The quiet lake'],['01-woodland-bridge','Woodland bridge'],['03-manor-welcome','A welcome at the mansion'],['02-manor-interior','Inside the mansion'],['05-tree-fortress-exterior','Lumi and Kitty’s tree-fortress'],['06-tree-fortress-sanctuary','Inside their sanctuary']];
 const book=document.querySelector('#book'),spread=document.querySelector('#spread'),previous=document.querySelector('#previous'),next=document.querySelector('#next');
 const reduced=matchMedia('(prefers-reduced-motion: reduce)');
 let index=0,turn=null,pointer=null,animating=false;
