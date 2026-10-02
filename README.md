@@ -1,11 +1,9 @@
-# Feltworld
+# Shared preview
 
-A world of felt. A world of feeling.
+Static website shared by direct link. Please do not submit it to search engines or public directories.
 
-[Play Feltworld](https://axelmurillo.github.io/feltworld-play/) · [Picture book](https://axelmurillo.github.io/feltworld-play/picture-book.html) · [Character catalogue](https://axelmurillo.github.io/feltworld-play/catalogue/catalogue.html)
+Search indexing is discouraged through page-level noindex rules and domain-root crawler preferences. These are voluntary instructions; this public repository and direct file URLs remain accessible.
 
-This repository contains the shareable static website only. The project backup, chat archive and development records are kept separately in a private repository.
-
-This is a development preview. Policy pages identify the remaining draft details.
+The complete backup and development chat are kept separately in a private repository.
 
 Original artwork and project content: all rights reserved. Third-party software and fonts retain their licences, included with the website.
