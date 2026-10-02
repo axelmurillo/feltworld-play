@@ -1,0 +1,96 @@
+{
+  "version": 5,
+  "title": "Axel's Creature Catalogue",
+  "created": "2026-10-01",
+  "generator": "built-in image_gen",
+  "original_scene": "source-scene.png",
+  "reference_sheet_maximum_edge_px": 2048,
+  "reference_sheet_native_size_px": "See individual PNG headers and prompt records",
+  "usage": "Use the latest v4/v5 sheets below. October 2 user revisions override older eye colours, hair and hat proportions in the original composites. Use originals for scene scale and unchanged costume details. The natural-fur sheets show each creature without clothes; Nomie remains dressed. Maximum 2048 pixels per edge.",
+  "prompt_template": "Use catalogue character [CR-001 / CR-002 / CR-003 / CR-004] and the attached matching reference sheet. Preserve the character's exact facial design, proportions, colours and tactile handcrafted material style. Wardrobe: [original outfit / natural fur for a creature / specified new outfit]. Scene: [describe scene]. Pose and expression: [describe]. Maximum 2K resolution.",
+  "characters": [
+    {
+      "id": "CR-001",
+      "name": "Lumi",
+      "slug": "blue-creature",
+      "identity": "Soft cloudlike brushed blue fluff, oversized round head, huge glossy multicoloured starry irises, rosy cheeks, tiny dark nose, stubby pink-padded feet. No tight curls, ringlets, loops, horns, antennae or tail.",
+      "outfit": "Multicoloured floppy crochet hat with gold star and pompom; braided scarf with gold stars; crystal-topped microphone.",
+      "without": true,
+      "references": {
+        "with_clothes": "lumi-clothed-v4.png",
+        "without_clothes": "lumi-natural-v4.png"
+      },
+      "name_confirmed_by_user": false
+    },
+    {
+      "id": "CR-002",
+      "name": "Kitty",
+      "slug": "cat",
+      "identity": "Tiny black kitten with warm dark-brown fur highlights, pink nose/inner ears, large DEEP EMERALD GREEN irises with a yellow holographic shift, rosy cheeks, rounded paws and fluffy curled upright tail. Iris base stays green.",
+      "outfit": "Multicoloured braided scarf with prominent gold star. No hat.",
+      "without": true,
+      "references": {
+        "with_clothes": "kitty-clothed-v5.png",
+        "without_clothes": "kitty-natural-v5.png"
+      },
+      "name_confirmed_by_user": true
+    },
+    {
+      "id": "CR-003",
+      "name": "Puppy",
+      "slug": "puppy",
+      "identity": "Tiny ivory/cream puppy with soft fluffy fur, floppy curly ears, unmistakably BLUE irises, black button nose, short muzzle, rosy cheeks, rounded paws and small fluffy tail.",
+      "outfit": "Multicoloured braided scarf with prominent gold star. No hat.",
+      "without": true,
+      "references": {
+        "with_clothes": "puppy-clothed-v5.png",
+        "without_clothes": "puppy-natural-v5.png"
+      },
+      "name_confirmed_by_user": true
+    },
+    {
+      "id": "CR-004",
+      "name": "Nomie",
+      "slug": "gnome-girl",
+      "identity": "Petite fantasy gnome girl, warm honey-beige skin slightly deeper than the original, subtly mixed facial features, rosy cheeks, crystal-faceted GREY irises with restrained silver/white iridescence; never purple. Cool mushroom/ash-brown hair balayaged to platinum/silver in two braids. Only her front fringe magically changes silver, lavender, rose or aqua.",
+      "outfit": "Comically colossal floppy red knitted floral snowflake hat, much bigger than her body; face prominent and unobscured. Floral sage-grey dress/coat, braided scarf, brown satchel and boots; star-window lantern.",
+      "without": false,
+      "references": {
+        "with_clothes": "nomie-sheet-v5.png"
+      },
+      "name_confirmed_by_user": true
+    }
+  ],
+  "original_composites": [
+    "../assets/references/original-trio.png",
+    "../assets/references/original-four.png",
+    "../assets/references/original-pottery-scale.png"
+  ],
+  "source_priority": "Latest explicit user revisions and v4/v5 sheets override older references for specified details. Original composites govern relative world scale and unchanged details.",
+  "corrected_character_atlas": "../assets/characters-v5.png",
+  "world_characters": [
+    {
+      "id": "WR-001",
+      "name": "Teacup Cottage",
+      "material": "Real glazed porcelain cup and saucer",
+      "reference": "../assets/scenes-v3/village-lit.png"
+    },
+    {
+      "id": "WR-002",
+      "name": "Teapot Manor",
+      "material": "Real glazed porcelain teapot mansion",
+      "reference": "../assets/scenes-v3/village-lit.png"
+    },
+    {
+      "id": "WR-003",
+      "name": "The Felt World",
+      "material": "Needle-felted wool, stitches and rounded flowers",
+      "reference": "../assets/felt-world.png"
+    }
+  ],
+  "world_scene_catalogue": "../assets/scenes-v3/index.html",
+  "world_scene_prompts": "../assets/scene-prompts-v3.json",
+  "updated": "2026-10-02",
+  "nomie_fringe_atlas": "../assets/nomie-fringes-v6.png",
+  "current_prompts": "../assets/revision-prompts-v4-v5.json"
+}
