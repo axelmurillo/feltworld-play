@@ -34,7 +34,7 @@ export function simplifyStory(chapters, endings, cast) {
   endings.hope.text='The Sunflower is alive. Parts of the valley still need work, but the world can recover. Your friends stay to clean the river, grow food and mend the pottery homes.';
   endings.mend.text='The Sunflower is alive, but the world is badly hurt. Your friends stay to help. You can go back and fix what went wrong.';
   cast[0].gift='A voice, and a crystal microphone.';cast[0].bio='Lumi has soft, cloud-fluffy blue fur, starry eyes, a star-covered scarf and a crystal microphone. Lumi helps you care for the river.';
-  cast[1].gift='A brave cat with a golden star.';cast[1].bio='Kitty has emerald-green eyes with a yellow holographic shimmer, black fur, a pink nose, a curled tail and a golden star on a braided scarf. He helps protect the woods.';
+  cast[1].gift='A careful cat in a well-loved scarf.';cast[1].bio='Kitty has soft near-black wool with a few silver strands, a curled tail and a glittering textured black nose. His right iris fades from yellow nearest his ear to emerald nearest his nose. He wears a worn red, navy and cream scarf without a star. He helps protect the woods.';
   cast[2].gift='A puppy who loves to plant.';cast[2].bio='Doggy has clear blue eyes, cream fur, soft ears and a golden star on a colourful scarf. She helps gardens grow.';
   cast[3].gift='Your guide with a star lantern.';cast[3].bio='Nomie has faceted crystal-grey eyes, a warm honey-beige face, cool brown-to-silver balayage braids, a magical colour-changing fringe and a comically enormous upward-pointed red gnome hat, a brown satchel and a star lantern. She lives in Teacup Cottage and helps repair the village.';
 }

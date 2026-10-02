@@ -173,3 +173,6 @@ body[data-fringe="aqua"] .sprite.gnome{background-position:right bottom}
 /* One brand, with the sentiment given room to read rather than tracked out. */
 .brand-sub{letter-spacing:.02em;font-size:10px;text-transform:none}
 @media(max-width:720px){.topbar .brand-sub{display:none}.cover-copy h1{font-size:clamp(27px,8vw,38px)}}
+
+/* Approved Kitty is a standalone cut-out; other friends retain their v7 atlas. */
+.sprite.cat{background-image:url('assets/kitty-cutout-v8.png');background-size:100% 100%;background-position:center;clip-path:none}
