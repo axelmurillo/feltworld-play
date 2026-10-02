@@ -22,16 +22,16 @@ const zoomButton = byId('zoom-button');
 let currentIndex = 0;
 let enlarged = false;
 
-const imageRevision = '20261002-lumi-nomie-v2';
+const imageRevision = '20261002-five-gnomes-v3';
 const imageURL = view => `images/${view.id}.png?v=${imageRevision}`;
-const imageAlt = view => `Lumi, Kitty, Doggy and Nomie together, viewed ${view.description}, in their current default outfits.`;
+const imageAlt = view => `Lumi, Kitty, Doggy, Nomie and Jack together, viewed ${view.description}, in their current default outfits.`;
 
 for (const [index, view] of views.entries()) {
   const button = document.createElement('button');
   button.type = 'button';
   button.className = 'angle-button';
   button.dataset.index = String(index);
-  button.setAttribute('aria-label', `Show ${view.label.toLowerCase()} view of all four characters`);
+  button.setAttribute('aria-label', `Show ${view.label.toLowerCase()} view of all five characters`);
   button.setAttribute('aria-pressed', 'false');
   const thumbnail = document.createElement('img');
   thumbnail.src = imageURL(view);
@@ -64,7 +64,7 @@ function showView(index, updateHash = true) {
   byId('view-count').textContent = `${currentIndex + 1} / ${views.length}`;
   byId('view-count').setAttribute('aria-label', `Image ${currentIndex + 1} of ${views.length}`);
   byId('dialog-title').textContent = view.label;
-  byId('enlarge-button').setAttribute('aria-label', `Enlarge ${view.label.toLowerCase()} view of all four characters`);
+  byId('enlarge-button').setAttribute('aria-label', `Enlarge ${view.label.toLowerCase()} view of all five characters`);
   byId('original-link').href = src;
   byId('download-link').href = src;
   byId('download-link').download = `${view.id}.png`;
