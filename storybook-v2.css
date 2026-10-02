@@ -176,3 +176,12 @@ body[data-fringe="aqua"] .sprite.gnome{background-position:right bottom}
 
 /* Approved Kitty is a standalone cut-out; other friends retain their v7 atlas. */
 .sprite.cat{background-image:url('assets/kitty-cutout-v8.png');background-size:100% 100%;background-position:center;clip-path:none}
+
+/* Approved mansion scale: Nomie stands beside its doorway, on her own layer.
+   The other friends retain their relative sizes in the quiet foreground. */
+.art[data-background="village-lit"] .party{display:contents}
+.art[data-background="village-lit"] .party>.sprite{position:absolute;bottom:4%;margin:0;z-index:4}
+.art[data-background="village-lit"] .party>.blue{left:32%;width:13.63%}
+.art[data-background="village-lit"] .party>.cat{left:44%;width:7.52%}
+.art[data-background="village-lit"] .party>.puppy{left:52%;width:7.99%}
+.art[data-background="village-lit"] .party>.gnome{left:45.1%;top:51.3%;bottom:auto;width:13.6%}

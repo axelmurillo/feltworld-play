@@ -1,5 +1,5 @@
 // The picture book borrows existing artwork. It has no game-save dependency.
-const scene = (name, title, caption, chapter) => ({ src: `assets/${name.startsWith('sunflower-')?'scenes-v4':'scenes-v3'}/${name}.png`, title, caption, chapter, kind:'scene' });
+const scene = (name, title, caption, chapter) => ({ src: `assets/${name==='village-lit'?'scenes-v5':name.startsWith('sunflower-')?'scenes-v4':'scenes-v3'}/${name}.png`, title, caption, chapter, kind:'scene' });
 const art = (src, title, caption, chapter, kind='reference') => ({src,title,caption,chapter,kind});
 export const PAGES = [
   art('assets/references/original-trio.png','Three little friends','The first glimpse of Lumi, Kitty and Doggy, beneath a sky full of stars.','The beginning','original'),
@@ -20,7 +20,7 @@ export const PAGES = [
   scene('garden-bare','A quiet flower bed','Without a little care, the garden stays bare.','The garden'),
   scene('village-before','The pottery village','Teacup Cottage and Teapot Manor wait for their lamps to be mended.','The tea set'),
   scene('village-sun','Sunflower light','The tea set glows with a little help from sunflowers.','The tea set'),
-  scene('village-lit','Home, all lit up','Warm windows shine through smooth, glossy porcelain.','The tea set'),
+  scene('village-lit','Home, all lit up','A huge china mansion, lovingly mended with fine gold and dressed in handmade crochet snow.','The tea set'),
   scene('village-smoke','Smoke over the rooftops','Quick light leaves a cloud above the village.','The tea set'),
   scene('storm-before','Rain on the hillside','The friends find a family waiting in the storm.','The hillside'),
   scene('storm-shelter','Safe from the rain','A little shelter makes a big difference.','The hillside'),

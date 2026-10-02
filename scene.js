@@ -21,7 +21,7 @@ export const OUTCOMES={
  'storm-help':['storm-shelter','warm-shelter'], 'storm-garden':['storm-roots','new-roots'], 'storm-run':['storm-flood','flooded-path'],
  'heart-seed':['sunflower-bloom','heart-light'], 'heart-light':['sunflower-bloom','glimmer-light'], 'heart-song':['sunflower-bloom','microphone-song'], 'heart-force':['sunflower-dim','damaged-heart'],
 };
-export const sceneURL=name=>`assets/${name.startsWith('sunflower-')?'scenes-v4':'scenes-v3'}/${name}.png`;
+export const sceneURL=name=>`assets/${name==='village-lit'?'scenes-v5':name.startsWith('sunflower-')?'scenes-v4':'scenes-v3'}/${name}.png`;
 export function sceneVisual(s,cover=false,chapter=Math.min(s.chapter,5)){
  const location=LOCATIONS[chapter],baseline=location==='heart'?'sunflower-before':`${location}-before`;
  if(cover)return {location:'village',baseline:'village-lit',background:'village-lit',result:null,feature:null};
