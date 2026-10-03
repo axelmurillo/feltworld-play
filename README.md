@@ -1,9 +1,5 @@
-# Shared preview
+# feltWorld legacy links
 
-Static website shared by direct link. Please do not submit it to search engines or public directories.
+The approved book, game and character book live at https://axelmurillo.github.io/feltworld/. This repository contains small compatibility pages only. Artwork and runtime are hosted once at the canonical destination. Prior Git commits remain recoverable history.
 
-Search indexing is discouraged through page-level noindex rules and domain-root crawler preferences. These are voluntary instructions; this public repository and direct file URLs remain accessible.
-
-The complete backup and development chat are kept separately in a private repository.
-
-Original artwork and project content: all rights reserved. Third-party software and fonts retain their licences, included with the website.
+Browser navigation to known old asset URLs forwards through the custom 404 page. Old embedded image or fetch URLs receive HTTP 404; update those references to the canonical paths.

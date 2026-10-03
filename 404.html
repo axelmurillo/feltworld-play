@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Continue to feltWorld</title><script>
+const base="https://axelmurillo.github.io/feltworld/";
+const old=location.pathname.replace(/^\/feltworld-play\/?/,"");
+let next="";
+if(old.startsWith("feltworld/"))next=old.slice(10);
+else if(old.startsWith("flipbook/"))next="flipbook/v1/doggy/"+old.slice(9);
+else if(old.startsWith("character-review/"))next="character-book/"+old.slice(17);
+else if(/^(assets|vendor|catalogue)\//.test(old)||/^(app|audio|engine|plain-story|planet|scene|site|site-config|picture-book(?:-data)?)\.js$/.test(old)||/^(style|polish|storybook-v2|picture-book)\.css$/.test(old)||/^(favicon\.ico|site\.webmanifest|terms\.html|privacy\.html|cookies\.html|picture-book\.html)$/.test(old))next="game-2d/"+old;
+if(next)location.replace(base+next+location.search+location.hash);
+</script></head><body style="background:#171821;color:#eeeaf6;font:18px Georgia,serif;padding:40px"><p>This link has moved.</p><a style="color:#c7c8ed" href="https://axelmurillo.github.io/feltworld/">Open feltWorld</a></body></html>
