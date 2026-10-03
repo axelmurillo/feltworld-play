@@ -6,6 +6,7 @@
 <meta name="robots" content="noindex,nofollow,noimageindex,nosnippet">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#17191c">
+<meta name="author" content="Laurence Whitcombe">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <title>A World of Felt — Vol. I: Doggy!</title>
 <style>
@@ -59,9 +60,9 @@ const reduced=matchMedia('(prefers-reduced-motion: reduce)');
 let index=0,turn=null,pointer=null,animating=false;
 const revision='20261002-mansion-home-fresh-v1';
 const isCover=i=>scenes[i][0].startsWith('cover-');
-const coverPath=i=>'covers/'+(i===0?'front-cover-v1.png':'back-cover-v1.png')+'?v=periwinkle-1';
+const coverPath=i=>'covers/'+(i===0?'front-cover-v1.png':'back-cover-v1.png')+'?v=laurence-whitcombe-20261003';
 const path=(i,side)=>`${scenes[i][0]}-part-${side==='left'?1:2}-${side}.png?v=${revision}`;
-const img=(i,side)=>{const e=new Image();e.src=isCover(i)?coverPath(i):path(i,side);e.alt=isCover(i)?(i===0?'A World of Felt. Vol. I: Doggy! By John Smith.':'Copyright John Smith, 2026.'):`${scenes[i][1]}, ${side} page`;e.draggable=false;return e};
+const img=(i,side)=>{const e=new Image();e.src=isCover(i)?coverPath(i):path(i,side);e.alt=isCover(i)?(i===0?'A World of Felt. Vol. I: Doggy! By Laurence Whitcombe.':'Copyright Laurence Whitcombe, 2026.'):`${scenes[i][1]}, ${side} page`;e.draggable=false;return e};
 const storageKey='felt-story-tape-draft-v2';
 let draftEdits={};
 try{const saved=JSON.parse(localStorage.getItem(storageKey)||'{}');if(saved&&typeof saved==='object'&&!Array.isArray(saved))draftEdits=saved;}catch{}
